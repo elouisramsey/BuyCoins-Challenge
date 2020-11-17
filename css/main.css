@@ -1,0 +1,1137 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+input,
+textarea,
+button {
+  font-size: 0.8rem;
+  border: 1px solid #e2dddd;
+}
+
+button {
+  border-radius: 0;
+  padding: 0.75em 1em;
+  background-color: transparent;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../font/Helvetica.ttf");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  line-height: 1;
+  background: #fefefe;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.desktop-profile,
+.nav-desktop {
+  display: none;
+}
+
+header {
+  background: #24292e;
+  z-index: 100;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-lists {
+  padding: 1rem 0.5rem;
+  position: absolute;
+  z-index: 50;
+  top: 3rem;
+  left: 0;
+  background: #24292e;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+header .nav-lists .search-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+header .nav-lists .search-holder form {
+  width: 100%;
+}
+
+header .nav-lists .search-holder form input {
+  background: #24292e;
+  border: 1px solid #444d56;
+  padding: 0.3rem 0.5rem;
+}
+
+header .nav-lists .search-holder form input::-webkit-input-placeholder {
+  color: #c9c8c8;
+  font-size: 0.7rem;
+}
+
+header .nav-lists .search-holder form input:-ms-input-placeholder {
+  color: #c9c8c8;
+  font-size: 0.7rem;
+}
+
+header .nav-lists .search-holder form input::-ms-input-placeholder {
+  color: #c9c8c8;
+  font-size: 0.7rem;
+}
+
+header .nav-lists .search-holder form input::placeholder {
+  color: #c9c8c8;
+  font-size: 0.7rem;
+}
+
+header .nav-lists .search-holder .p-holder {
+  position: absolute;
+  right: 18px;
+  border: 1px solid #444d56;
+  padding: 0 0.5rem;
+  height: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-lists .search-holder .p-holder p {
+  display: contents;
+  color: #8e8e8e;
+}
+
+header .nav-lists ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+header .nav-lists ul li {
+  width: 100%;
+  border-top: 0.5px solid #565656;
+}
+
+header .nav-lists ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1rem;
+  cursor: pointer;
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-lists ul li a .nav-name-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-lists ul li a .nav-name-img .nav-img-holder {
+  width: 9%;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-lists ul li a .nav-name-img .nav-img-holder img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+header .nav-lists ul li a .nav-name-img .nav-name-holder p {
+  color: white;
+}
+
+header .showNav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+svg {
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+
+input:-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+input::-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+input::placeholder {
+  color: #b8b8b8;
+}
+
+input:active {
+  background: transparent;
+  font: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #24292e;
+  font-size: 0.8rem;
+}
+
+p {
+  color: #586069;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+input {
+  border-radius: 0.3rem;
+  color: #586069;
+  width: 100%;
+}
+
+select {
+  border-width: 1px;
+  border-style: solid;
+  background: transparent;
+  border-color: inherit;
+}
+
+select:focus {
+  outline: none;
+}
+
+.bell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bell .bb {
+  width: 1rem;
+  height: 1rem;
+}
+
+.bell .dropdown {
+  display: none;
+}
+
+.profile {
+  padding-bottom: 2rem;
+}
+
+.profile .name-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.profile .name-img .img-holder {
+  width: 16%;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.profile .name-img .img-holder img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile .name-img .img-holder .svg-holder {
+  display: none;
+}
+
+.profile .name-img .name-holder h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile .name-img .name-holder p {
+  color: #586069;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.profile .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.5rem;
+}
+
+.profile .status svg {
+  color: grey;
+  position: absolute;
+  padding-left: 0.4rem;
+}
+
+.profile .status input {
+  padding: 0.3rem 2rem;
+  font-size: 0.8rem;
+}
+
+.profile .stat {
+  margin: 1rem 0.5rem;
+}
+
+.profile .prof-edit {
+  margin: 0 0.5rem 3rem;
+}
+
+.profile .prof-edit .btn-holder {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  background: #f7f7f7;
+  padding: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.profile .prof-edit .btn-holder a {
+  text-decoration: none;
+  color: #24292e;
+  font-size: 0.8rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.info .follower,
+.info .following,
+.info .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5rem;
+}
+
+.info .follower p,
+.info .following p,
+.info .star p {
+  margin: 0 0.1rem;
+}
+
+.info .follower .diff,
+.info .following .diff,
+.info .star .diff {
+  font-weight: bold;
+}
+
+.info svg {
+  color: #6a737d;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.tabs {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d1d5da;
+}
+
+.tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs ul li {
+  height: 100%;
+}
+
+.tabs ul li:last-child,
+.tabs ul li .i-hide {
+  display: none;
+}
+
+.tabs ul .active {
+  border-bottom: 2px solid #f9826c;
+}
+
+.tabs ul .active a {
+  font-weight: bold;
+}
+
+.tabs ul .repo a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.tabs ul .repo a span {
+  border-radius: 1rem;
+  background: rgba(209, 213, 218, 0.5);
+  height: 1rem;
+  width: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid transparent;
+  min-width: 1.1rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #24292e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.search {
+  margin: 0 0.5rem;
+  border-bottom: 1px solid #eaecef;
+  padding: 0 0 2rem;
+}
+
+.search form {
+  margin: 0 0 1rem;
+}
+
+.search form input {
+  padding: 0.3rem 1rem;
+  background: transparent;
+}
+
+.search .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search .options select {
+  white-space: nowrap;
+  min-height: 100%;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.search .options select option {
+  padding: 0;
+  min-height: 100%;
+  white-space: normal;
+}
+
+.search .options select option:focus {
+  outline: none;
+}
+
+.search .options select span {
+  color: #24292e;
+}
+
+.search .options button {
+  background: #2c974b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.search .options button svg {
+  height: 1rem;
+}
+
+.search .options button p {
+  color: white;
+}
+
+.repos {
+  margin: 0 0.5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #eaecef;
+}
+
+.repos .single-repo {
+  border-bottom: 1px solid #eaecef;
+  margin: 0 0 2rem;
+  padding: 2rem 0;
+}
+
+.repos .single-repo .top-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.repos .single-repo .top-holder .name-holder {
+  width: 100%;
+}
+
+.repos .single-repo .top-holder .name-holder h1 {
+  color: #0366d6;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.repos .single-repo .top-holder .name-holder .repoType {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 2em;
+  background-color: initial !important;
+  border: 1px solid transparent;
+  border-color: #e1e4e8;
+  margin: 0.5rem 0;
+}
+
+.repos .single-repo .top-holder .name-holder .repoType p {
+  color: gray;
+}
+
+.repos .single-repo .top-holder .name-holder .repSummary {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.repos .single-repo .top-holder .star {
+  padding: 0 0.5rem;
+  border: 3px solid #f3f4f6;
+  border-radius: 0.4rem;
+  background: #f3f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repos .single-repo .top-holder .star .star-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.repos .single-repo .top-holder .star .star-holder svg {
+  height: 1rem;
+  width: 1rem;
+  color: #40444a;
+}
+
+.repos .single-repo .top-holder .star .star-holder p {
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  color: #40444a;
+}
+
+.repos .single-repo .lang-date {
+  margin: 1rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.repos .single-repo .lang-date .lang {
+  margin: 0 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repos .single-repo .lang-date .lang .lang-type {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.repos .single-repo .lang-date .lang .blob {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+}
+
+.repos .single-repo .lang-date .lang .JavaScript {
+  background: #f1e05a;
+}
+
+.repos .single-repo .lang-date .lang .CSS {
+  background-color: #563d7c;
+}
+
+.repos .single-repo .lang-date .lang .Dart {
+  background-color: #00b4ab;
+}
+
+.repos .single-repo .lang-date .lang .HTML {
+  background-color: #e34c26;
+}
+
+.repos .single-repo .lang-date .update {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.location {
+  display: none;
+}
+
+.location .single-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.location .single-info svg {
+  color: #4e4e4e;
+  margin-right: 0.5rem;
+}
+
+.location .single-info:last-child svg {
+  fill: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-profile,
+  .nav-desktop {
+    display: block;
+  }
+  header {
+    padding: 1.5rem 0.5rem;
+  }
+  header #toggler,
+  header .nav-lists {
+    display: none;
+  }
+  header .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header .nav-desktop .search-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    width: 17rem;
+    margin: 0 1rem;
+  }
+  header .nav-desktop .search-holder form {
+    width: 100%;
+  }
+  header .nav-desktop .search-holder form input {
+    background: #24292e;
+    border: 1px solid #444d56;
+    padding: 0.3rem 0.5rem;
+  }
+  header .nav-desktop .search-holder .p-holder {
+    position: absolute;
+    left: 19rem;
+    border: 1px solid #444d56;
+    padding: 0 0.5rem;
+    height: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav-desktop .search-holder .p-holder p {
+    display: contents;
+    color: #8e8e8e;
+  }
+  header svg {
+    height: 1rem;
+  }
+  header ul,
+  header .desktop-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header ul #dsk-img,
+  header .desktop-profile #dsk-img {
+    width: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul #dsk-img a,
+  header .desktop-profile #dsk-img a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul #pd,
+  header .desktop-profile #pd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul li a,
+  header .desktop-profile li a {
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+    line-height: 1.2rem;
+    color: #fff;
+  }
+  header ul li a .desktop-img,
+  header .desktop-profile li a .desktop-img {
+    border-radius: 50%;
+  }
+  header ul li a .desktop-img img,
+  header .desktop-profile li a .desktop-img img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  header .bell-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    margin: 3rem 0;
+  }
+  .profile .personal .name-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile .personal .name-img .img-holder {
+    width: 87%;
+    margin-right: 0;
+  }
+  .profile .personal .name-img .img-holder .svg-holder {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    left: 12rem;
+    z-index: 100;
+    background: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 19rem;
+  }
+  .profile .personal .name-img .img-holder .svg-holder svg {
+    color: grey;
+  }
+  .profile .personal .name-img .name-holder {
+    width: 100%;
+    margin: 1rem 0 0 1rem;
+  }
+  .profile .personal .name-img .name-holder h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .profile .personal .name-img .name-holder p {
+    font-size: 1.4rem;
+  }
+  .profile .personal .status {
+    display: none;
+  }
+  .profile .personal .stat {
+    font-size: 1.1rem;
+  }
+  .profile .personal .prof-edit .btn-holder {
+    height: 3rem;
+  }
+  .profile .personal .prof-edit .btn-holder a {
+    font-size: 1rem;
+  }
+  .profile .personal .info svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .profile .repositories .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 1rem;
+    margin: 0;
+  }
+  .profile .repositories .search form {
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  .profile .repositories .search form input {
+    padding: 0.5rem 0.7rem;
+  }
+  .tabs ul li:last-child,
+  .tabs ul li .i-hide {
+    display: block;
+  }
+  .tabs ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tabs ul li a svg {
+    color: #b9b8b8;
+    margin-right: 0.5rem;
+  }
+  .location {
+    display: block;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bell .bb {
+    width: 1.5rem;
+    height: 2rem;
+  }
+  .repos .single-repo .top-holder .name-holder h1 {
+    font-size: 1.5rem;
+  }
+  header .nav-desktop .search-holder {
+    width: 20rem;
+  }
+  header .nav-desktop .search-holder .p-holder {
+    left: 21rem;
+  }
+  .profile .personal .name-img .img-holder .svg-holder {
+    left: 17rem;
+    top: 22rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+  header .nav-desktop .search-holder .p-holder {
+    left: 24rem;
+  }
+  .profile {
+    padding: 0 3rem;
+  }
+  .profile .personal .stat {
+    padding: 0.5rem 0 0 0.5rem;
+  }
+  .profile .personal .name-img .img-holder .svg-holder {
+    left: 17rem;
+    top: 20rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .repositories {
+    padding: 0 3rem;
+  }
+  .repositories .tabs ul {
+    width: 59%;
+  }
+  .repositories .search form {
+    width: 35rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

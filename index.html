@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Github Profile</title>
+</head>
+
+<body>
+    <header>
+        <i data-feather="menu" id="toggler"></i>
+        <div class="icon-holder">
+            <img src="/images/GitHub-Mark-Light-32px.png" alt="Github Logo">
+        </div>
+        <nav class="nav-lists">
+            <div class="search-holder">
+                <form action="">
+                    <input type="search" name="search" placeholder="Search or jump to..."></form>
+                <div class="p-holder">
+                    <p>/</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="" class="menuLink">Dashboard</a></li>
+                <li><a href="" class="menuLink">Pull requests</a></li>
+                <li><a href="" class="menuLink">Issues</a></li>
+                <li><a href="" class="menuLink">Marketplace</a></li>
+                <li><a href="" class="menuLink">Explore</a></li>
+                <li><a href="" class="menuLink">
+                        <div class="nav-name-img">
+                            <div class="nav-img-holder"></div>
+                            <div class="nav-name-holder">
+                                <p></p>
+                            </div>
+                        </div>
+                    </a></li>
+                <li><a href=""><i data-feather="log-out"></i> Sign out</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-desktop">
+            <div class="search-holder">
+                <form action="">
+                    <input type="search" name="search" id="search" placeholder="Search or jump to..."></form>
+                <div class="p-holder">
+                    <p>/</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="" class="menuLink">Pulls</a></li>
+                <li><a href="" class="menuLink">Issues</a></li>
+                <li><a href="" class="menuLink">Marketplace</a></li>
+                <li><a href="" class="menuLink">Explore</a></li>
+            </ul>
+        </nav>
+        <div class="bell-holder">
+            <div class="bell">
+                <i data-feather="bell" class="bb"></i>
+                <div class="dropdown">
+                    <i data-feather="plus"></i>
+                    <i data-feather="chevron-down"></i>
+                </div>
+            </div>
+            <ul class="desktop-profile">
+                <li id="pd"><i data-feather="plus"></i><i data-feather="arrow-down"></i></li>
+                <li id="dsk-img"><a href="" class="desktop-menuLink">
+                        <div class="desktop-img">
+                        </div>
+                    </a></li>
+                <li><i data-feather="arrow-down"></i></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="profile">
+        <div class="personal">
+            <div class="name-img">
+                <div class="img-holder">
+                    <div class="svg-holder"><i data-feather="smile"></i></div>
+                </div>
+                <div class="name-holder">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="status">
+                <i data-feather="smile"></i>
+                <input type="text" name="status" id="status" placeholder="Set status">
+            </div>
+            <p class="stat"></p>
+            <div class="prof-edit">
+                <div class="btn-holder">
+                    <a href="#">Edit profile</a>
+                </div>
+                <div class="info">
+                    <div class="follower">
+                        <i data-feather="users"></i>
+                        <p class="diff followers"></p>
+                        <p>follower</p>
+                    </div>
+                    <div class="following">
+                        <p class="diff followings"></p>
+                        <p>following</p>
+                    </div>
+                    <div class="star">
+                        <i data-feather="star"></i>
+                        <p class="diff star"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <a href="" class="single-info">
+                    <i class="i-hide" data-feather="home"></i>
+                    <p id="employer"></p>
+                </a>
+                <a href="" class="single-info">
+                    <i class="i-hide" data-feather="map-pin"></i>
+                    <p id="country"></p>
+                </a>
+                <a href="" class="single-info">
+                    <i class="i-hide" data-feather="twitter"></i>
+                    <p id="twitter"></p>
+                </a>
+            </div>
+        </div>
+        <div class="repositories">
+            <div class="tabs">
+                <ul>
+                    <li><a href="#"><i class="i-hide" data-feather="book-open"></i>Overview</a></li>
+                    <li class="active repo"><a href="#"><i class="i-hide"
+                                data-feather="book"></i>Repositories<span></span></a></li>
+                    <li><a href="#"><i class="i-hide" data-feather="bar-chart"></i>Projects</a></li>
+                    <li><a href="#"><i class="i-hide" data-feather="package"></i>Packages</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="search" name="repo" id="repo" placeholder="Find a repository...">
+                </form>
+                <div class="options">
+                    <select name="pick" id="pick">
+                        <option value="all">
+                            <p>Type: <span>All <i data-feather="chevron-down"></i></span></p>
+                        </option>
+                    </select>
+                    <select name="lang" id="lang">
+                        <option value="all">
+                            <p>Language: <span>All <i data-feather="chevron-down"></i></span></p>
+                        </option>
+                    </select>
+                    <button><i data-feather="book"></i>
+                        <p>New</p>
+                    </button>
+                </div>
+            </div>
+            <div class="repos">
+                <!-- <div class="single-repo">
+                    <div class="top-holder">
+                        <div class="name-holder">
+                            <h1 class="name"></h1>
+                            <div class="repoType">
+                                <p class="repType"></p>
+                            </div>
+                            <p class="repSummary"></p>
+                        </div>
+                        <div class="star">
+                            <div class="star-holder">
+                                <i data-feather="star"></i>
+                                <p>Star</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-date">
+                        <div class="lang">
+                            <div class="blob"></div>
+                            <p class="lang-type"></p>
+                        </div>
+                        <div class="time">
+                            <p class="update"></p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
