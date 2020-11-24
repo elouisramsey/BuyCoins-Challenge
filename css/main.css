@@ -410,6 +410,14 @@ select:focus {
   display: none;
 }
 
+#empty {
+  display: none;
+}
+
+main {
+  position: relative;
+}
+
 .profile {
   padding-bottom: 2rem;
 }
@@ -549,7 +557,6 @@ select:focus {
 
 .tabs {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #d1d5da;
 }
 
 .tabs ul {
@@ -855,6 +862,14 @@ select:focus {
 }
 
 @media only screen and (min-width: 768px) {
+
+  #empty {
+    display: block;
+    border-bottom: 1px solid #d1d5da;
+    top: 2.1%;
+    position: absolute;
+    width: 100%;
+  }
 
   .desktop-profile,
   .nav-desktop {

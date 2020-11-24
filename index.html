@@ -74,117 +74,120 @@
         </div>
 
     </header>
-    <div class="profile">
-        <div class="personal">
-            <div class="name-img">
-                <div class="img-holder">
-                    <div class="svg-holder"><i data-feather="smile"></i></div>
-                </div>
-                <div class="name-holder">
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </div>
-            <div class="status">
-                <i data-feather="smile"></i>
-                <input type="text" name="status" id="status" placeholder="Set status">
-            </div>
-            <p class="stat"></p>
-            <div class="prof-edit">
-                <div class="btn-holder">
-                    <a href="#">Edit profile</a>
-                </div>
-                <div class="info">
-                    <div class="follower">
-                        <i data-feather="users"></i>
-                        <p class="diff followers"></p>
-                        <p>follower</p>
+    <main>
+        <section id="empty"></section>
+        <div class="profile">
+            <div class="personal">
+                <div class="name-img">
+                    <div class="img-holder">
+                        <div class="svg-holder"><i data-feather="smile"></i></div>
                     </div>
-                    <div class="following">
-                        <p class="diff followings"></p>
-                        <p>following</p>
-                    </div>
-                    <div class="star">
-                        <i data-feather="star"></i>
-                        <p class="diff star"></p>
+                    <div class="name-holder">
+                        <h1></h1>
+                        <p></p>
                     </div>
                 </div>
-            </div>
-            <div class="location">
-                <a href="" class="single-info">
-                    <i class="i-hide" data-feather="home"></i>
-                    <p id="employer"></p>
-                </a>
-                <a href="" class="single-info">
-                    <i class="i-hide" data-feather="map-pin"></i>
-                    <p id="country"></p>
-                </a>
-                <a href="" class="single-info">
-                    <i class="i-hide" data-feather="twitter"></i>
-                    <p id="twitter"></p>
-                </a>
-            </div>
-        </div>
-        <div class="repositories">
-            <div class="tabs">
-                <ul>
-                    <li><a href="#"><i class="i-hide" data-feather="book-open"></i>Overview</a></li>
-                    <li class="active repo"><a href="#"><i class="i-hide"
-                                data-feather="book"></i>Repositories<span></span></a></li>
-                    <li><a href="#"><i class="i-hide" data-feather="bar-chart"></i>Projects</a></li>
-                    <li><a href="#"><i class="i-hide" data-feather="package"></i>Packages</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <form action="">
-                    <input type="search" name="repo" id="repo" placeholder="Find a repository...">
-                </form>
-                <div class="options">
-                    <select name="pick" id="pick">
-                        <option value="all">
-                            <p>Type: <span>All <i data-feather="chevron-down"></i></span></p>
-                        </option>
-                    </select>
-                    <select name="lang" id="lang">
-                        <option value="all">
-                            <p>Language: <span>All <i data-feather="chevron-down"></i></span></p>
-                        </option>
-                    </select>
-                    <button><i data-feather="book"></i>
-                        <p>New</p>
-                    </button>
+                <div class="status">
+                    <i data-feather="smile"></i>
+                    <input type="text" name="status" id="status" placeholder="Set status">
                 </div>
-            </div>
-            <div class="repos">
-                <!-- <div class="single-repo">
-                    <div class="top-holder">
-                        <div class="name-holder">
-                            <h1 class="name"></h1>
-                            <div class="repoType">
-                                <p class="repType"></p>
-                            </div>
-                            <p class="repSummary"></p>
+                <p class="stat"></p>
+                <div class="prof-edit">
+                    <div class="btn-holder">
+                        <a href="#">Edit profile</a>
+                    </div>
+                    <div class="info">
+                        <div class="follower">
+                            <i data-feather="users"></i>
+                            <p class="diff followers"></p>
+                            <p>follower</p>
+                        </div>
+                        <div class="following">
+                            <p class="diff followings"></p>
+                            <p>following</p>
                         </div>
                         <div class="star">
-                            <div class="star-holder">
-                                <i data-feather="star"></i>
-                                <p>Star</p>
+                            <i data-feather="star"></i>
+                            <p class="diff star"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location">
+                    <a href="" class="single-info">
+                        <i class="i-hide" data-feather="home"></i>
+                        <p id="employer"></p>
+                    </a>
+                    <a href="" class="single-info">
+                        <i class="i-hide" data-feather="map-pin"></i>
+                        <p id="country"></p>
+                    </a>
+                    <a href="" class="single-info">
+                        <i class="i-hide" data-feather="twitter"></i>
+                        <p id="twitter"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="repositories">
+                <div class="tabs">
+                    <ul>
+                        <li><a href="#"><i class="i-hide" data-feather="book-open"></i>Overview</a></li>
+                        <li class="active repo"><a href="#"><i class="i-hide"
+                                    data-feather="book"></i>Repositories<span></span></a></li>
+                        <li><a href="#"><i class="i-hide" data-feather="bar-chart"></i>Projects</a></li>
+                        <li><a href="#"><i class="i-hide" data-feather="package"></i>Packages</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="search" name="repo" id="repo" placeholder="Find a repository...">
+                    </form>
+                    <div class="options">
+                        <select name="pick" id="pick">
+                            <option value="all">
+                                <p>Type: <span>All <i data-feather="chevron-down"></i></span></p>
+                            </option>
+                        </select>
+                        <select name="lang" id="lang">
+                            <option value="all">
+                                <p>Language: <span>All <i data-feather="chevron-down"></i></span></p>
+                            </option>
+                        </select>
+                        <button><i data-feather="book"></i>
+                            <p>New</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="repos">
+                    <!-- <div class="single-repo">
+                        <div class="top-holder">
+                            <div class="name-holder">
+                                <h1 class="name"></h1>
+                                <div class="repoType">
+                                    <p class="repType"></p>
+                                </div>
+                                <p class="repSummary"></p>
+                            </div>
+                            <div class="star">
+                                <div class="star-holder">
+                                    <i data-feather="star"></i>
+                                    <p>Star</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="lang-date">
-                        <div class="lang">
-                            <div class="blob"></div>
-                            <p class="lang-type"></p>
+                        <div class="lang-date">
+                            <div class="lang">
+                                <div class="blob"></div>
+                                <p class="lang-type"></p>
+                            </div>
+                            <div class="time">
+                                <p class="update"></p>
+                            </div>
                         </div>
-                        <div class="time">
-                            <p class="update"></p>
-                        </div>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <script>
         feather.replace()
     </script>

@@ -31,7 +31,6 @@ function toggleHamburger() {
 fetch('https://api.github.com/users/elouisramsey')
   .then((response) => response.json())
   .then((data) => (hate = data))
-  .then(() => console.log(hate))
   .catch((error) => console.error(error))
 
   .then(() => (img.src = hate.avatar_url))
